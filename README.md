@@ -58,6 +58,7 @@
 ```
 git clone https://github.com/Vishuddhijain/WeCare.git
 ```
+```
 ** Import the Database**
 1. Open phpMyAdmin
 2. Create a new database named: contact_db
@@ -72,5 +73,5 @@ $conn = mysqli_connect('localhost', 'root', '', 'contact_db') or die('Connection
 2. Move the WeCare folder into your local server directory (e.g., htdocs)
 3. Open your browser and navigate to:
 http://localhost/WeCare/index.php
-
+```
 
