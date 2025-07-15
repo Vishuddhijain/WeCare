@@ -57,7 +57,7 @@
 ### Clone the Repository
 ```
 git clone https://github.com/Vishuddhijain/WeCare.git
-
+```
 ** Import the Database**
 1. Open phpMyAdmin
 2. Create a new database named: contact_db
