@@ -2,9 +2,11 @@
 
 **WeCare** is a simple yet functional **Doctor Appointment Booking Web Application** built using **PHP and MySQL**. It allows both **patients** and **doctors** to manage healthcare appointments with ease — from booking and uploading reports to reviewing doctors and downloading payment receipts.
 
+**Fully responsive and mobile-friendly** — the UI adapts to different screen sizes for better usability on smartphones, tablets, and desktops.
+
 ---
 
-## 🚀 Features
+## Features
 
 ### 👤 For Patients
 - ✅ **Secure Login/Signup** required before making an appointment  
@@ -23,11 +25,11 @@
 
 ---
 
-##  User Flow
+## User Flow
 
 1. User visits the site [`index.php`](index.php)  
 2. If the user clicks on **"Appointment"** or **"Book Appointment"**, they are prompted to log in first  
-3.  After login:
+3. After login:
    - **Patients** can:
      - Select a doctor  
      - Choose a time slot  
@@ -40,7 +42,7 @@
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Technology       | Purpose                            |
 |------------------|------------------------------------|
@@ -48,30 +50,43 @@
 | **MySQL**        | Relational database management     |
 | **HTML/CSS**     | Frontend structure and styling     |
 | **JavaScript**   | Client-side interactivity          |
-| **AJAX (Fetch)** | Dynamic doctor-slot loading        |
 
 ---
 
 ##  Setup Instructions
 
 ### Clone the Repository
-```
+
+```bash
 git clone https://github.com/Vishuddhijain/WeCare.git
-```
-```
-** Import the Database**
-1. Open phpMyAdmin
-2. Create a new database named: contact_db
-3.Import the contact_form.sql file located inside the project folder
 
-** Configure Database Connection**
-Ensure the following line exists in your PHP files (e.g., index.php, appointment.php, etc.):
+**Import the Database**
+Open phpMyAdmin
+
+Create a new database named: contact_db
+
+Import the contact_form.sql file located inside the project folder
+
+Configure Database Connection
+In your PHP files (e.g., index.php, appointment.php, etc.), ensure this line exists:
+
+php
+Copy code
 $conn = mysqli_connect('localhost', 'root', '', 'contact_db') or die('Connection failed');
+Run the Project Locally
+Start XAMPP/WAMP/MAMP
 
-** Run the Project Locally**
-1. Start XAMPP/WAMP/MAMP
-2. Move the WeCare folder into your local server directory (e.g., htdocs)
-3. Open your browser and navigate to:
+Move the WeCare folder into your local server directory (e.g., htdocs)
+
+Open your browser and navigate to:
+Copy code
 http://localhost/WeCare/index.php
-```
 
+
+
+yaml
+Copy code
+
+---
+
+Let me know if you’d like help creating responsive screenshots, adding live demo link
