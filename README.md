@@ -1,70 +1,76 @@
-# WeCare - Doctor Appointment Booking Platform 💖
+# 🩺 WeCare – Doctor Appointment Booking Platform
 
-WeCare is a simple yet functional **Doctor Appointment Booking Web Application** built using PHP and MySQL. It allows both **patients** and **doctors** to manage healthcare appointments easily.
+**WeCare** is a simple yet functional **Doctor Appointment Booking Web Application** built using **PHP and MySQL**. It allows both **patients** and **doctors** to manage healthcare appointments with ease — from booking and uploading reports to reviewing doctors and downloading payment receipts.
 
 ---
 
-## 🌟 Features
+## 🚀 Features
 
 ### 👤 For Patients
+- ✅ **Secure Login/Signup** required before making an appointment  
+- ✅ **Book an appointment** with available doctors and time slots  
+- ✅ **Upload previous lab reports** (PDF only) while booking  
+- ✅ **View upcoming and past appointments**  
+- ✅ **Cancel/delete an appointment** if needed  
+- ✅ **Submit reviews and ratings** for doctors after appointments  
+- ✅ **Download payment receipts** for appointments  
 
-* 👉 **Secure Login/Signup** required before making an appointment
-* 👉 **Book an appointment** with available doctors & time slots
-* 👉 **Upload previous lab reports** (PDF only) while booking
-* 👉 **View your upcoming and past appointments**
-* 👉 **Delete an appointment** if needed
-* 👉 **Give review & rating** to the doctor after the appointment
-* 👉 **Download payment receipt** for any appointment
-
----
-
-### 🎠 For Doctors
-
-* 👉 **Secure Login/Signup for doctors**
-* 👉 **View doctor profile**
-* 👉 **See reviews and ratings** given by patients
-* 👉 **View appointments with patients**
+### 🩺 For Doctors
+- ✅ **Secure Login/Signup** for doctors  
+- ✅ **View personal profile**  
+- ✅ **View reviews and ratings** received from patients  
+- ✅ **See all scheduled appointments**  
 
 ---
 
-## 🚀 User Flow
+##  User Flow
 
-1. User visits the site (`index.php`)
-2. If user clicks on **Appointment** or **Book Appointment** → must login first
-3. After login, patient can select doctor, time slot, upload report, and book appointment
-4. Patient can view their appointments, delete, or download receipt
-5. Doctors can login, view their appointments, see reviews from patients
-
----
-
-## 🛠️ Tech Stack
-
-* **PHP** (server-side scripting)
-* **MySQL** (database)
-* **HTML, CSS, JS** (frontend)
-* **AJAX (Fetch API)** for dynamic loading of doctor slots
+1. User visits the site [`index.php`](index.php)  
+2. If the user clicks on **"Appointment"** or **"Book Appointment"**, they are prompted to log in first  
+3.  After login:
+   - **Patients** can:
+     - Select a doctor  
+     - Choose a time slot  
+     - Upload reports  
+     - Confirm and manage bookings  
+   - **Doctors** can:
+     - View their dashboard  
+     - Check patient reviews  
+     - See scheduled appointments  
 
 ---
 
-## ⚙️ Setup Instructions
+## 🛠 Tech Stack
 
-1. Clone this repo:
+| Technology       | Purpose                            |
+|------------------|------------------------------------|
+| **PHP**          | Backend server-side scripting      |
+| **MySQL**        | Relational database management     |
+| **HTML/CSS**     | Frontend structure and styling     |
+| **JavaScript**   | Client-side interactivity          |
+| **AJAX (Fetch)** | Dynamic doctor-slot loading        |
 
-```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+---
+
+##  Setup Instructions
+
+### Clone the Repository
 ```
+git clone https://github.com/Vishuddhijain/WeCare.git
 
-2. Import the database (provided in the SQL file) into your MySQL server.
+** Import the Database**
+1. Open phpMyAdmin
+2. Create a new database named: contact_db
+3.Import the contact_form.sql file located inside the project folder
 
-3. Configure your database connection in the project:
-
-```php
+** Configure Database Connection**
+Ensure the following line exists in your PHP files (e.g., index.php, appointment.php, etc.):
 $conn = mysqli_connect('localhost', 'root', '', 'contact_db') or die('Connection failed');
-```
 
-4. Run the project on your local server (XAMPP / WAMP / MAMP):
+** Run the Project Locally**
+1. Start XAMPP/WAMP/MAMP
+2. Move the WeCare folder into your local server directory (e.g., htdocs)
+3. Open your browser and navigate to:
+http://localhost/WeCare/index.php
 
-```bash
-http://localhost/your_project_folder/index.php
-```
 
